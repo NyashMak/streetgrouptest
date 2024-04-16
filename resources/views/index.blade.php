@@ -6,7 +6,7 @@
             <div class="">
                 <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Upload CSV File</h2>
                 <hr>
-                <div>
+                <div class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                     <form action="{{ route('upload') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div>
@@ -16,7 +16,7 @@
                             @enderror
                         </div>
                         <div class="mt-10">
-                            <button class="btn btn-primary" type="submit" name="submit">Upload File</button>
+                            <button class="btn btn-dark" type="submit" name="submit">Upload File</button>
                         </div>
                     </form>
                 </div>
@@ -27,9 +27,9 @@
         <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
             <div>
                 <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Home Owners List</h2>
-
+                <hr>
                 <div class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                    <table class="table table-primary">
+                    <table class="table table-hover table-bordered table-light">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">Title</th>
